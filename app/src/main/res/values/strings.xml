@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Practicando_Parcial</string>
+    <string name="tvUsuario">Usuario: </string>
+    <string name="tvContrasehna">Contrasenha: </string>
+
+    <string name="hindUsuario">Ingrese usuario</string>
+    <string name="hindContrasehna">Ingrese contrasenha</string>
+
+    <string name="btnLogin">Login</string>
+    <string name="btnRegistrarse">Registrarse</string>
+
+    <string name="imgDescripcion">Descripcion de imagen</string>
+
 </resources>
