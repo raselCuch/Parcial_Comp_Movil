@@ -11,7 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class formulario extends AppCompatActivity {
+public class juegoMichi extends AppCompatActivity {
 
     public TextView tv1;
     @Override
