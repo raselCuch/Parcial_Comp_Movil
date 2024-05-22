@@ -11,4 +11,7 @@
 
     <string name="imgDescripcion">Descripcion de imagen</string>
 
+    <!--actividad 3-->
+    <string name="btnRegresarA3">Regresar</string>
+    <string name="btnRefresacarA3">Refrescar</string>
 </resources>

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,9 +12,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.Objects;
+
 public class MainActivity extends AppCompatActivity {
 
     public EditText etContrasenha, etUsuario;
+
+    String usuario, contrasenha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +35,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ingresar(View view){
-        Intent i = new Intent(this, formulario.class);
-        i.putExtra("usuario", etUsuario.getText().toString());  // envio de datos
-        i.putExtra("contrasenha", etContrasenha.getText().toString());  // envio de datos
+        if(verificar(usuario, contrasenha)){
+            Intent i = new Intent(this, formulario.class);
+            i.putExtra("usuario", etUsuario.getText().toString());  // envio de datos
+            i.putExtra("contrasenha", etContrasenha.getText().toString());  // envio de datos
 
-        startActivity(i);
-        finish();
+            startActivity(i);
+            finish();
+        }
+
+    }
+
+    public boolean verificar(String usuario, String contrasenha){
+        if(!(etUsuario.getText().toString().equals("rasel"))){
+            Toast.makeText(this, "Usuario incorrecto", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if(!(etContrasenha.getText().toString().equals("1234"))){
+            Toast.makeText(this, "Contrasenha incorrecta", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        return true;
     }
 
 }
