@@ -14,11 +14,11 @@
         android:layout_marginStart="13dp"
         android:layout_marginTop="41dp"
         android:text="@string/tvTituloActivity2"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
+        app:layout_constraintStart_toStartOf="@+id/txtUsuarioA2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/txtUsuarioA2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:text="@string/tvUsuarioA2"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextText"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtUsuarioA2"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -45,11 +45,11 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:text="@string/tvDNI"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumber"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumber" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtDni"
+        app:layout_constraintEnd_toStartOf="@+id/txtDni" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/txtDni"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
@@ -58,8 +58,8 @@
         android:hint="@string/hindDNI"
         android:inputType="number"
         android:maxLength="8"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumberPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword" />
+        app:layout_constraintEnd_toEndOf="@+id/txtContrasenhaA2"
+        app:layout_constraintTop_toBottomOf="@+id/txtContrasenhaA2" />
 
     <TextView
         android:id="@+id/textView8"
@@ -67,11 +67,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:text="@string/tvFNacimiento"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextDate"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtFNacimiento"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/txtFNacimiento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="3dp"
@@ -79,8 +79,8 @@
         android:ems="10"
         android:hint="@string/tvFNacimiento"
         android:inputType="date"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintStart_toStartOf="@+id/txtDni"
+        app:layout_constraintTop_toBottomOf="@+id/txtDni" />
 
     <TextView
         android:id="@+id/textView10"
@@ -109,7 +109,7 @@
         android:layout_marginEnd="23dp"
         android:layout_marginBottom="104dp"
         app:layout_constraintBottom_toBottomOf="@+id/button5"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumberPassword"
+        app:layout_constraintEnd_toEndOf="@+id/txtContrasenhaA2"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView11">
 
@@ -143,7 +143,7 @@
         app:layout_constraintStart_toStartOf="@+id/textView8" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/txtCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
@@ -170,6 +170,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
         android:layout_marginBottom="38dp"
+        android:onClick="registrar"
         android:text="@string/btnRegistrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -179,12 +180,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tvContrasenhaA2"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumberPassword"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtContrasenhaA2"
         app:layout_constraintEnd_toStartOf="@+id/textView7"
         app:layout_constraintStart_toStartOf="@+id/textView7" />
 
     <EditText
-        android:id="@+id/editTextNumberPassword"
+        android:id="@+id/txtContrasenhaA2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -193,8 +194,8 @@
         android:hint="@string/hindContrasehnaA2"
         android:inputType="numberPassword"
         android:maxLength="4"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintStart_toStartOf="@+id/txtUsuarioA2"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuarioA2" />
 
     <Spinner
         android:id="@+id/spinner"

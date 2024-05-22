@@ -23,6 +23,7 @@
     <string name="tvGenero">Genero</string>
 
     <string name="tvECivil">E. Civil</string>
+
     <string name="rbESoltero">Soltero</string>
     <string name="rbECasado">Casado</string>
     <string name="rbEDivorciado">Divorciado</string>
