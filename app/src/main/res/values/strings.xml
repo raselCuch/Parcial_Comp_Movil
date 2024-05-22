@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Practicando_Parcial</string>
+    <string name="app_name">Practicando Parcial</string>
     <string name="tvUsuario">Usuario: </string>
     <string name="tvContrasehna">Contrasenha: </string>
 
@@ -11,7 +11,32 @@
 
     <string name="imgDescripcion">Descripcion de imagen</string>
 
-    <!--actividad 3-->
+    <!--actividad 2 -->
+    <string name="tvTituloActivity2">Registro de usuario</string>
+
+    <string name="tvUsuarioA2">Usuario: </string>
+    <string name="tvContrasenhaA2">Constrasenha: </string>
+    <string name="tvDNI">DNI</string>
+    <string name="tvFNacimiento">F. Nacimiento</string>
+    <string name="tvCorreo">Correo</string>
+
+    <string name="tvGenero">Genero</string>
+
+    <string name="tvECivil">E. Civil</string>
+    <string name="rbESoltero">Soltero</string>
+    <string name="rbECasado">Casado</string>
+    <string name="rbEDivorciado">Divorciado</string>
+
+    <string name="btnRegistrar">Registrar</string>
+    <string name="btnVolver">Volver</string>
+
+    <string name="hindUsuarioA2">Ingrese usuario</string>
+    <string name="hindContrasehnaA2">Ingrese contrasenha</string>
+    <string name="hindDNI">Ingrese Dni</string>
+    <string name="hindCFNacimiento">Ingrese F. Nacimiento</string>
+    <string name="hindCorreo">Ingrese correo</string>
+
+    <!--actividad 3 -->
     <string name="btnRegresarA3">Regresar</string>
     <string name="btnRefresacarA3">Refrescar</string>
 </resources>

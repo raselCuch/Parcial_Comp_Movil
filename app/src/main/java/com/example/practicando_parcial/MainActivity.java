@@ -36,13 +36,21 @@ public class MainActivity extends AppCompatActivity {
 
     public void ingresar(View view){
         if(verificar(usuario, contrasenha)){
-            Intent i = new Intent(this, formulario.class);
+            Intent i = new Intent(this, juegoMichi.class);
             i.putExtra("usuario", etUsuario.getText().toString());  // envio de datos
             i.putExtra("contrasenha", etContrasenha.getText().toString());  // envio de datos
 
             startActivity(i);
             finish();
         }
+
+    }
+
+    public void registrar(View view){
+        Intent i = new Intent(this, formularioPersonal.class);
+
+        startActivity(i);
+        finish();
 
     }
 

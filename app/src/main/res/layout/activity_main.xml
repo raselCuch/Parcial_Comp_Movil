@@ -24,6 +24,7 @@
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="38dp"
         android:backgroundTint="#C61818"
+        android:onClick="registrar"
         android:text="@string/btnRegistrarse"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

@@ -13,10 +13,13 @@
         android:theme="@style/Theme.Practicando_Parcial"
         tools:targetApi="31">
         <activity
-            android:name="juegoMichi"
+            android:name=".formularioPersonal"
             android:exported="false" />
         <activity
-            android:name="MainActivity" 
+            android:name=".juegoMichi"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
