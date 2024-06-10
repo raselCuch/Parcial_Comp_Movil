@@ -3,7 +3,9 @@ package com.example.practicando_parcial;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class juegoMichi extends AppCompatActivity {
 
     public TextView tv1;
+    boolean jugador1= true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,4 +38,29 @@ public class juegoMichi extends AppCompatActivity {
         startActivity(i);
         finish();
     }
+
+    public void clickBoton(View view) {
+        Button button = (Button) view;
+        String buttonID = getResources().getResourceEntryName(button.getId());
+
+//        if (!button.getText().toString().trim().equals("")) {
+//            return; // Si el botón ya tiene texto, no hacer nada
+//        }
+
+        if(jugador1){
+            button.setText( "X" );//: "X"
+        }else{
+            button.setText( "0" );//: "X"
+        }
+        jugador1 = !jugador1;
+        button.setEnabled(false);
+    }
+
+    public void refrescar(View view){
+        Intent i = new Intent(this, juegoMichi.class);
+
+        startActivity(i);
+        finish();
+    }
+
 }

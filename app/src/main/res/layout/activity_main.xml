@@ -47,13 +47,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
         android:layout_marginBottom="8dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/hindUsuario"
         android:inputType="text"
+        android:maxLength="8"
+        android:text="rasel"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        android:autofillHints=""
-        android:maxLength="8"/>
+        app:layout_constraintStart_toStartOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView2"
@@ -70,14 +71,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/hindContrasehna"
         android:inputType="textPassword"
+        android:maxLength="4"
+        android:text="1234"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        android:autofillHints=""
-        android:maxLength="4"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/button"
