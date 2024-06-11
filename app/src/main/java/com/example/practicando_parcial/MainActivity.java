@@ -13,7 +13,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,10 +39,6 @@ public class MainActivity extends AppCompatActivity {
         usuario = R_Usuario;
         contrasenha = R_Contrasenha;
 
-        if(usuario == null && contrasenha == null){
-            usuario="rasel";
-            contrasenha="1234";
-        }
 //        tv1.setText("datos recibidos: "+ R_Usuario + ","+R_Contrasenha);
 
         etContrasenha = findViewById(R.id.txtContrasenha);

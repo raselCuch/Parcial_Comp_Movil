@@ -46,4 +46,6 @@
     <string name="chkMascota2">Gato</string>
     <string name="chkMascota3">Loro</string>
 
+    <string name="nameActivity2">Actividad Formulario</string>
+
 </resources>
