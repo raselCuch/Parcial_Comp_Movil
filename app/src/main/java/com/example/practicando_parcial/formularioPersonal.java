@@ -10,7 +10,6 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -25,7 +24,7 @@ public class formularioPersonal extends AppCompatActivity {
     Spinner comboGeneros;
     CheckBox checkBoxPerro, checkBoxGato, checkBoxLoro;
 
-    public EditText etUsuario, etContrasenha, etDni, chkMascota;
+    public EditText etUsuario, etContrasenha, etDni;
     RadioGroup radioGroupEstadoCivil;
 
 
@@ -50,10 +49,6 @@ public class formularioPersonal extends AppCompatActivity {
         checkBoxLoro = findViewById(R.id.checkBox2);
 
 
-//        etFNacimiento = findViewById(R.id.txtFNacimiento);
-//        chkMascota = findViewById(R.id.txtCorreo);
-
-//        genero = (TextView) findViewById(R.id.spinner);
         comboGeneros = (Spinner) findViewById(R.id.spinner);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -139,7 +134,7 @@ public class formularioPersonal extends AppCompatActivity {
                 "DNI: " + dni + "\n" +
                 "Género: " + genero + "\n" +
                 "Estado Civil: " + estadoCivil + "\n" +
-                "Mascotas: " + mascotas.toString();
+                "Mascotas: " + mascotas;
 
         Toast.makeText(this, mensaje, Toast.LENGTH_LONG).show();
     }
