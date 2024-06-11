@@ -17,6 +17,8 @@ public class juegoMichi extends AppCompatActivity {
 
     public TextView tv1;
     boolean jugador1= true;
+
+    private Button[][] buttons = new Button[3][3];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,14 @@ public class juegoMichi extends AppCompatActivity {
         String R_Usuario = getIntent().getStringExtra("usuario");
         String R_Contrasenha = getIntent().getStringExtra("contrasenha");
         tv1.setText("hola: "+ R_Usuario + " sea bienvenido al juego de michi");
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                String buttonID = "button" +String.valueOf(i+1)+String.valueOf(j+1);
+                int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
+                buttons[i][j] = findViewById(resID);
+            }
+        }
     }
     public void regresar(View view){
         Intent i = new Intent(this, MainActivity.class);
@@ -57,10 +67,14 @@ public class juegoMichi extends AppCompatActivity {
     }
 
     public void refrescar(View view){
-        Intent i = new Intent(this, juegoMichi.class);
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                buttons[i][j].setText(" ");
+//                buttons[i][j].setEnabled(true);
+            }
+        }
 
-        startActivity(i);
-        finish();
+        // Restablecer el turno del jugador
+//        jugador1 = true;
     }
-
 }

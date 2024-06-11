@@ -1,9 +1,13 @@
 package com.example.practicando_parcial;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -14,7 +18,10 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class formularioPersonal extends AppCompatActivity {
 
-    public EditText etUsuario, etContrasenha, etDni, etFNacimiento, etCorreo;
+//    TextView genero;
+    Spinner comboGeneros;
+    public EditText etUsuario, etContrasenha, etDni, chkMascota;
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,8 +36,15 @@ public class formularioPersonal extends AppCompatActivity {
         etUsuario = findViewById(R.id.txtUsuarioA2);
         etContrasenha = findViewById(R.id.txtContrasenhaA2);
         etDni = findViewById(R.id.txtDni);
-        etFNacimiento = findViewById(R.id.txtFNacimiento);
-        etCorreo = findViewById(R.id.txtCorreo);
+//        etFNacimiento = findViewById(R.id.txtFNacimiento);
+//        chkMascota = findViewById(R.id.txtCorreo);
+
+//        genero = (TextView) findViewById(R.id.spinner);
+        comboGeneros = (Spinner) findViewById(R.id.spinner);
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.combo_genero, android.R.layout.simple_spinner_item);
+        comboGeneros.setAdapter(adapter);
     }
 
     public void regresar(View view){

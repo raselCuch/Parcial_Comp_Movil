@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">Practicando Parcial Movil</string>
+    <string name="app_name">Parcial Comp. Movil</string>
     <string name="tvUsuario">Usuarios: </string>
     <string name="tvContrasehna">Contrasenha: </string>
 
     <string name="hindUsuario">Ingrese usuario</string>
     <string name="hindContrasehna">Ingrese contrasenha</string>
 
-    <string name="btnLogin">Login</string>
+    <string name="btnLogin">Iniciar Session</string>
     <string name="btnRegistrarse">Registrarse</string>
 
     <string name="imgDescripcion">Descripcion de imagen</string>
@@ -18,7 +18,7 @@
     <string name="tvContrasenhaA2">Constrasenha: </string>
     <string name="tvDNI">DNI</string>
     <string name="tvFNacimiento">F. Nacimiento</string>
-    <string name="tvCorreo">Correo</string>
+    <string name="tvMascota">Mascota</string>
 
     <string name="tvGenero">Genero</string>
 
@@ -41,5 +41,9 @@
     <string name="btnRegresarA3">Regresar</string>
     <string name="btnRefresacarA3">Refrescar</string>
     <string name="btnMichi"> </string>
+
+    <string name="chkMascota1">Perro</string>
+    <string name="chkMascota2">Gato</string>
+    <string name="chkMascota3">Loro</string>
 
 </resources>
